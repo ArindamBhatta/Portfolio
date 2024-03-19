@@ -1,0 +1,97 @@
+ .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-info{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+.avarate-img{
+    margin-top: 20px;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.git-hub-info{
+    margin-left: 1rem;
+    text-align: left;    
+}  
+
+.git-hub-info p{
+    margin-bottom: 0.5rem;
+}
+
+.Repositories{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.75rem;
+}
+.Repositories > h3{
+    color: rgb(119, 119, 254);
+    padding-bottom: 0.75rem;
+}
+.repositories-container{
+    display: flex;
+    margin-left: 1.25rem;
+}
+
+.grid-property{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    list-style: none;
+}
+
+.all-reposetory {
+    border: 1px solid black;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    width: 450px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.position{
+    margin-top: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+.position span{
+    color: blueviolet;
+}
+
+.position p{
+    margin: 0.625rem;
+}
+
+@media (max-width:1078px) { 
+    .all-reposetory {
+     margin-left: 110px;
+    }
+    .grid-property{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        list-style: none;
+    }
+}
+@media (max-width:726px) { 
+    .Repositories > h3{
+        display: flex;
+        align-items: center;
+    }
+    .all-reposetory {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:553px) { 
+    .Repositories{
+        display: none;
+    }  
+}
+

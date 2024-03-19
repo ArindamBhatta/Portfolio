@@ -1,0 +1,64 @@
+.navbar{
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border: none;
+    box-shadow:  0px 0px 12px rgba(0, 0, 0, 0.25)
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.Portfolio {
+  color: #000;
+  position: relative;
+  transition: color 0.5s ease; 
+}
+
+.Portfolio::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  background-color: #0f0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.Portfolio:hover {
+  color: rgb(78, 100, 244); 
+}
+
+.Portfolio:hover::after {
+  animation-name: lineanima-name;
+  animation-duration: 2s;
+}
+
+@keyframes lineanima-name {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+span{
+  color: rgb(33, 33, 231);
+}
+span:hover {
+  transform: scale(1.2); 
+}
